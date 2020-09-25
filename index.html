@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akshay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-primary">
+        <div class="">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Agile</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Menu</a></li>
+            <li><a href="#">Username</a></li>
+            <li><a href="#">SalesReport</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="form-group" onchange="getCombo()" style="display: flex">
+        <label style="margin: 10px">Category</label>
+        <select
+          class="form-control"
+          id="category"
+          style="width: fit-content; margin: 10px"
+        >
+          <option>1</option>
+          <option>2</option>
+        </select>
+        <label style="margin: 10px">Prodcut</label>
+        <select
+          class="form-control"
+          id="product"
+          style="width: fit-content; margin: 10px"
+        >
+          <option>1</option>
+          <option>2</option>
+        </select>
+        <label style="margin: 10px">Brand</label>
+        <select
+          class="form-control"
+          id="brand"
+          style="width: fit-content; margin: 10px"
+        >
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      <script src="plot.js"></script>
+    </div>
+  </body>
+</html>
